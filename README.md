@@ -110,3 +110,22 @@ If nothing else works, report bugs directly:
 
 Send any other comments, patches, flowers and suggestions to:
 	Bram Moolenaar <Bram@vim.org>
+
+
+##configuration:##
+```
+hg clone https://vim.googlecode.com/hg vim
+cd vim/src
+./configure --enable-pythoninterp --with-features=huge --prefix=$HOME/opt/vim
+make && make install
+mkdir -p $HOME/bin
+cd $HOME/bin
+ln -s $HOME/opt/vim/bin/vim
+which vim
+vim --version
+```
+on ubuntu
+```
+sudo apt get install gtk2-engines-pixbuf
+```
+
